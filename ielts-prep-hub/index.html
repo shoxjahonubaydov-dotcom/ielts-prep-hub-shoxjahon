@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IELTS Prep Hub — Master the IELTS with Band 8.0+ Strategies</title>
+  <meta name="description" content="Free IELTS preparation platform with interactive band calculator, structured module breakdowns for Listening, Reading, Writing, and Speaking, plus Band 8.0+ samples." />
+  <meta name="keywords" content="IELTS preparation, band score calculator, IELTS listening, IELTS reading, IELTS writing, IELTS speaking, band 8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="logo" aria-label="IELTS Prep Hub Home">
+        <span class="logo-icon" aria-hidden="true">🎓</span>
+        <span class="logo-text">IELTS <span class="logo-accent">Prep Hub</span></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#listening" class="nav-link">Listening</a></li>
+        <li><a href="#reading" class="nav-link">Reading</a></li>
+        <li><a href="#writing" class="nav-link">Writing</a></li>
+        <li><a href="#speaking" class="nav-link">Speaking</a></li>
+        <li><a href="#calculator" class="nav-link">Band Calc</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-ghost" id="nav-github-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          View Code
+        </a>
+        <a href="#modules" class="btn btn-primary" id="nav-cta-btn">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="overview" aria-label="Hero section">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="badge" role="note">
+          <span class="badge-dot" aria-hidden="true"></span>
+          100% Free Resources &amp; Preparation Guide
+        </div>
+        <h1 class="hero-title">
+          Master the <span class="gradient-text">IELTS Exam</span> with Proven Strategies &amp; Band 8.0+ Samples
+        </h1>
+        <p class="hero-subtitle">
+          Access structured breakdowns for Listening, Reading, Writing, and Speaking — all in one clean, distraction-free platform.
+        </p>
+        <div class="hero-actions">
+          <a href="#modules" class="btn btn-primary btn-lg" id="hero-start-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Start Learning
+          </a>
+          <a href="#calculator" class="btn btn-outline btn-lg" id="hero-calc-btn">
+            Try Band Score Calculator
+          </a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Platform statistics">
+          <div class="stat" role="listitem">
+            <span class="stat-number">9.0</span>
+            <span class="stat-label">Max Band Score</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Core Modules</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" role="listitem">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Free Forever</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ===== BAND SCORE CALCULATOR ===== -->
+    <section class="section calculator-section" id="calculator" aria-labelledby="calc-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Interactive Tool</div>
+          <h2 class="section-title" id="calc-heading">Band Score Calculator</h2>
+          <p class="section-subtitle">Enter your raw correct scores to instantly see your estimated IELTS band.</p>
+        </div>
+        <div class="calc-card" role="form" aria-label="Band score calculator">
+          <div class="calc-toggle-group" role="group" aria-label="Test type selection">
+            <button class="calc-toggle active" id="toggle-academic" data-type="academic" aria-pressed="true">Academic</button>
+            <button class="calc-toggle" id="toggle-general" data-type="general" aria-pressed="false">General Training</button>
+          </div>
+
+          <div class="calc-inputs">
+            <div class="calc-input-group">
+              <label for="listening-score" class="calc-label">
+                <span class="module-icon listening-icon" aria-hidden="true">🎧</span>
+                Listening Score
+                <span class="score-range">(0 – 40)</span>
+              </label>
+              <div class="slider-wrapper">
+                <input type="range" id="listening-score" class="score-slider" min="0" max="40" value="28" aria-valuemin="0" aria-valuemax="40" aria-valuenow="28" />
+                <div class="slider-track-fill" id="listening-track" aria-hidden="true"></div>
+              </div>
+              <div class="score-display-row">
+                <span class="raw-score-label">Raw: <strong id="listening-raw">28</strong></span>
+                <span class="band-pill listening-pill" id="listening-band" aria-live="polite">Band 7.0</span>
+              </div>
+            </div>
+
+            <div class="calc-input-group">
+              <label for="reading-score" class="calc-label">
+                <span class="module-icon reading-icon" aria-hidden="true">📖</span>
+                Reading Score
+                <span class="score-range">(0 – 40)</span>
+              </label>
+              <div class="slider-wrapper">
+                <input type="range" id="reading-score" class="score-slider" min="0" max="40" value="28" aria-valuemin="0" aria-valuemax="40" aria-valuenow="28" />
+                <div class="slider-track-fill" id="reading-track" aria-hidden="true"></div>
+              </div>
+              <div class="score-display-row">
+                <span class="raw-score-label">Raw: <strong id="reading-raw">28</strong></span>
+                <span class="band-pill reading-pill" id="reading-band" aria-live="polite">Band 7.0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result" aria-live="polite" aria-atomic="true">
+            <div class="result-inner">
+              <div class="result-label">Estimated Overall Band (L+R average)</div>
+              <div class="result-band" id="overall-band">7.0</div>
+              <div class="result-meter">
+                <div class="meter-bar" id="meter-bar" style="width: 70%"></div>
+              </div>
+              <div class="meter-labels" aria-hidden="true">
+                <span>1.0</span><span>3.0</span><span>5.0</span><span>7.0</span><span>9.0</span>
+              </div>
+              <div class="result-message" id="result-message">Great progress! You're targeting a strong academic score.</div>
+            </div>
+          </div>
+
+          <div class="band-scale-table" aria-label="Band score reference table">
+            <div class="band-table-header">
+              <span>Raw Score (L)</span>
+              <span>Raw Score (R-Ac)</span>
+              <span>Raw Score (R-GT)</span>
+              <span>Band</span>
+            </div>
+            <div class="band-table-body" id="band-table-body">
+              <!-- filled by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4 MODULE CARDS ===== -->
+    <section class="section modules-section" id="modules" aria-labelledby="modules-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Curriculum</div>
+          <h2 class="section-title" id="modules-heading">Four Modules. One Platform.</h2>
+          <p class="section-subtitle">Comprehensive breakdowns, strategies, and Band 8.0+ samples for every test section.</p>
+        </div>
+
+        <!-- ===== LISTENING ===== -->
+        <article class="module-card" id="listening" aria-labelledby="listening-heading">
+          <div class="module-card-header listening-header">
+            <div class="module-icon-large" aria-hidden="true">🎧</div>
+            <div>
+              <div class="module-tag">Section 1 – 4</div>
+              <h3 class="module-title" id="listening-heading">Listening</h3>
+              <p class="module-desc">40 questions across 4 sections — social, educational, and academic contexts.</p>
+            </div>
+            <div class="module-score-badge" aria-label="Target band score">Band 8.0+</div>
+          </div>
+          <div class="module-body">
+            <div class="module-grid">
+              <div class="info-block">
+                <h4 class="info-block-title">Section Breakdown</h4>
+                <ul class="info-list" role="list">
+                  <li><span class="tag tag-blue">Section 1</span> Social conversation — 2 speakers, form filling</li>
+                  <li><span class="tag tag-blue">Section 2</span> Monologue — community context, map/diagram</li>
+                  <li><span class="tag tag-green">Section 3</span> Academic discussion — up to 4 speakers</li>
+                  <li><span class="tag tag-green">Section 4</span> Academic lecture — hardest section, no pause</li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <h4 class="info-block-title">Question Types</h4>
+                <ul class="info-list" role="list">
+                  <li>✅ Multiple Choice (A, B, C)</li>
+                  <li>✅ Matching &amp; Map Labelling</li>
+                  <li>✅ Form / Note / Table Completion</li>
+                  <li>✅ Sentence Completion (≤ 3 words)</li>
+                  <li>✅ Short Answer Questions</li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <h4 class="info-block-title">🏆 Pro Strategies</h4>
+                <ul class="info-list" role="list">
+                  <li><strong>Predict:</strong> Read questions before audio plays</li>
+                  <li><strong>Spelling:</strong> Practice British spellings (colour, centre)</li>
+                  <li><strong>Distractors:</strong> Speakers often change their answer — listen till end</li>
+                  <li><strong>Plurals:</strong> Missing an 's' = wrong answer</li>
+                  <li><strong>Numbers:</strong> Write numerals not words unless instructed</li>
+                </ul>
+              </div>
+              <div class="info-block">
+                <h4 class="info-block-title">📝 Note-Taking Template</h4>
+                <div class="code-block" aria-label="Note-taking template">
+<pre>BEFORE AUDIO:
+→ Underline keywords in questions
+→ Note expected answer type (name/number/place)
+
+DURING AUDIO:
+→ Follow the order — answers are sequential
+→ Don't dwell — move to the next question
+
+AFTER AUDIO:
+→ 10-min transfer time — check spelling</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== READING ===== -->
+        <article class="module-card" id="reading" aria-labelledby="reading-heading">
+          <div class="module-card-header reading-header">
+            <div class="module-icon-large" aria-hidden="true">📖</div>
+            <div>
+              <div class="module-tag">3 Passages · 40 Questions · 60 Min</div>
+              <h3 class="module-title" id="reading-heading">Reading</h3>
+              <p class="module-desc">Academic and General Training differ in text complexity and source material.</p>
+            </div>
+            <div class="module-score-badge" aria-label="Target band score">Band 8.0+</div>
+          </div>
+          <div class="module-body">
+            <div class="reading-tabs" role="tablist" aria-label="Academic vs General Training">
+              <button class="tab-btn active" role="tab" id="reading-tab-academic" aria-selected="true" aria-controls="reading-panel-academic" data-tab="academic">Academic</button>
+              <button class="tab-btn" role="tab" id="reading-tab-general" aria-selected="false" aria-controls="reading-panel-general" data-tab="general">General Training</button>
+            </div>
+            <div class="tab-panel active" role="tabpanel" id="reading-panel-academic" aria-labelledby="reading-tab-academic">
+              <div class="module-grid">
+                <div class="info-block">
+                  <h4 class="info-block-title">Text Sources</h4>
+                  <ul class="info-list">
+                    <li>📰 Academic journals &amp; research papers</li>
+                    <li>📰 Books, magazines (scientific/cultural)</li>
+                    <li>📰 Texts written for non-specialist readers</li>
+                    <li>📊 May include graphs, diagrams, illustrations</li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">Question Types</h4>
+                  <ul class="info-list">
+                    <li>⚡ True / False / Not Given</li>
+                    <li>⚡ Yes / No / Not Given</li>
+                    <li>⚡ Matching Headings to paragraphs</li>
+                    <li>⚡ Matching Information</li>
+                    <li>⚡ Summary / Sentence Completion</li>
+                    <li>⚡ Multiple Choice</li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">True/False/Not Given Tips</h4>
+                  <div class="tip-box">
+                    <p><strong>TRUE:</strong> Statement matches the text exactly</p>
+                    <p><strong>FALSE:</strong> Statement contradicts the text</p>
+                    <p><strong>NOT GIVEN:</strong> No information about it in the text</p>
+                    <div class="warning-tip">⚠️ NOT GIVEN ≠ the statement is wrong. It simply isn't mentioned!</div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">Speed Strategies</h4>
+                  <ul class="info-list">
+                    <li>🔍 <strong>Skim:</strong> Read title, first &amp; last sentences (90 sec/passage)</li>
+                    <li>🔍 <strong>Scan:</strong> Look for keywords from the question</li>
+                    <li>🔍 <strong>Paraphrase:</strong> Answers use synonyms, not exact words</li>
+                    <li>🔍 <strong>Time:</strong> Aim 18 min/passage, 6 min to transfer</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="reading-panel-general" aria-labelledby="reading-tab-general" hidden>
+              <div class="module-grid">
+                <div class="info-block">
+                  <h4 class="info-block-title">Section Breakdown</h4>
+                  <ul class="info-list">
+                    <li><span class="tag tag-blue">Section 1</span> 2–3 short factual texts (ads, notices)</li>
+                    <li><span class="tag tag-blue">Section 2</span> 2 work-related texts (job descriptions)</li>
+                    <li><span class="tag tag-green">Section 3</span> 1 longer descriptive/instructional text</li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">Key Differences from Academic</h4>
+                  <ul class="info-list">
+                    <li>✅ More practical, everyday language</li>
+                    <li>✅ Texts from brochures, ads, manuals</li>
+                    <li>✅ Section 3 is more complex — treat like Academic</li>
+                    <li>✅ Band conversion is slightly more lenient</li>
+                  </ul>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">Matching Headings Tips</h4>
+                  <div class="tip-box">
+                    <p>1. Read all headings first</p>
+                    <p>2. Find the <strong>main idea</strong> of each paragraph</p>
+                    <p>3. Eliminate wrong ones first</p>
+                    <p>4. Headings reflect the whole paragraph — not just one sentence</p>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">GT Band Leniency</h4>
+                  <div class="tip-box">
+                    <p>For GT Reading, you need ~2–3 more correct answers to achieve the same band as Academic.</p>
+                    <p class="mt-1">Example: Band 7.0 requires <strong>30/40</strong> in Academic vs <strong>34/40</strong> in GT.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== WRITING ===== -->
+        <article class="module-card" id="writing" aria-labelledby="writing-heading">
+          <div class="module-card-header writing-header">
+            <div class="module-icon-large" aria-hidden="true">✍️</div>
+            <div>
+              <div class="module-tag">Task 1 + Task 2 · 60 Min</div>
+              <h3 class="module-title" id="writing-heading">Writing</h3>
+              <p class="module-desc">Assessed on Task Achievement, Coherence &amp; Cohesion, Lexical Resource, and Grammatical Range.</p>
+            </div>
+            <div class="module-score-badge" aria-label="Target band score">Band 8.0+</div>
+          </div>
+          <div class="module-body">
+            <div class="writing-tabs" role="tablist" aria-label="Writing task selection">
+              <button class="tab-btn active" role="tab" id="writing-tab-task1" aria-selected="true" aria-controls="writing-panel-task1" data-tab="task1">Task 1 — Report/Letter</button>
+              <button class="tab-btn" role="tab" id="writing-tab-task2" aria-selected="false" aria-controls="writing-panel-task2" data-tab="task2">Task 2 — Essay</button>
+            </div>
+
+            <div class="tab-panel active" role="tabpanel" id="writing-panel-task1" aria-labelledby="writing-tab-task1">
+              <div class="module-grid">
+                <div class="info-block">
+                  <h4 class="info-block-title">Task 1 Structure (Academic)</h4>
+                  <div class="structure-flow" aria-label="Task 1 structure steps">
+                    <div class="flow-step">
+                      <span class="flow-num">1</span>
+                      <div><strong>Introduction</strong> — Paraphrase the prompt (1–2 sentences)</div>
+                    </div>
+                    <div class="flow-step">
+                      <span class="flow-num">2</span>
+                      <div><strong>Overview</strong> — 2 main trends/features (NOT a conclusion)</div>
+                    </div>
+                    <div class="flow-step">
+                      <span class="flow-num">3</span>
+                      <div><strong>Body 1</strong> — Key feature 1 with data/figures</div>
+                    </div>
+                    <div class="flow-step">
+                      <span class="flow-num">4</span>
+                      <div><strong>Body 2</strong> — Key feature 2 with supporting data</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">Chart &amp; Graph Vocabulary</h4>
+                  <div class="vocab-grid" role="list" aria-label="Chart vocabulary">
+                    <div class="vocab-chip" role="listitem">rose sharply</div>
+                    <div class="vocab-chip" role="listitem">declined gradually</div>
+                    <div class="vocab-chip" role="listitem">remained stable</div>
+                    <div class="vocab-chip" role="listitem">fluctuated significantly</div>
+                    <div class="vocab-chip" role="listitem">peaked at</div>
+                    <div class="vocab-chip" role="listitem">reached a trough</div>
+                    <div class="vocab-chip" role="listitem">witnessed a surge</div>
+                    <div class="vocab-chip" role="listitem">accounted for</div>
+                    <div class="vocab-chip" role="listitem">was overtaken by</div>
+                    <div class="vocab-chip" role="listitem">marginally higher</div>
+                    <div class="vocab-chip" role="listitem">roughly doubled</div>
+                    <div class="vocab-chip" role="listitem">more than tripled</div>
+                  </div>
+                </div>
+                <div class="info-block info-block-wide">
+                  <h4 class="info-block-title">Sample Band 8.0 Overview Sentence</h4>
+                  <div class="sample-essay-box">
+                    <div class="sample-tag">✨ Band 8.0 Sample</div>
+                    <blockquote class="sample-text">
+                      "Overall, it is clear that the consumption of fast food increased substantially across all three countries over the period shown, with the United States recording the highest figures throughout."
+                    </blockquote>
+                    <div class="examiner-note">
+                      <strong>Examiner Note:</strong> This overview mentions the overall trend + standout feature without specific data. It avoids being a conclusion — earning full marks for Task Achievement.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" role="tabpanel" id="writing-panel-task2" aria-labelledby="writing-tab-task2" hidden>
+              <div class="module-grid">
+                <div class="info-block">
+                  <h4 class="info-block-title">Essay Templates</h4>
+                  <div class="template-tabs" role="tablist" aria-label="Essay type">
+                    <button class="mini-tab active" data-essay="opinion" role="tab" aria-selected="true">Opinion</button>
+                    <button class="mini-tab" data-essay="discussion" role="tab" aria-selected="false">Discussion</button>
+                    <button class="mini-tab" data-essay="problem" role="tab" aria-selected="false">Problem-Solution</button>
+                  </div>
+                  <div class="essay-template" id="essay-opinion">
+                    <div class="code-block small">
+<pre>INTRO: Background + clear opinion statement
+BODY 1: First reason supporting your view
+          + example/evidence
+BODY 2: Second reason + counterargument
+          + refutation
+CONCLUSION: Restate opinion + summary
+            (~250–280 words ideal)</pre>
+                    </div>
+                  </div>
+                  <div class="essay-template hidden" id="essay-discussion">
+                    <div class="code-block small">
+<pre>INTRO: Background + balanced overview
+BODY 1: Argue viewpoint A + evidence
+BODY 2: Argue viewpoint B + evidence
+CONCLUSION: Your balanced opinion + summary
+            (~270 words ideal)</pre>
+                    </div>
+                  </div>
+                  <div class="essay-template hidden" id="essay-problem">
+                    <div class="code-block small">
+<pre>INTRO: Context + thesis (problems exist)
+BODY 1: Problems + causes
+BODY 2: Solutions + benefits
+CONCLUSION: Restate main points + outlook
+            (~260 words ideal)</pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block">
+                  <h4 class="info-block-title">High-Scoring Linking Words</h4>
+                  <div class="linking-categories">
+                    <div class="linking-cat">
+                      <span class="cat-label">Adding</span>
+                      <div class="vocab-grid small">
+                        <div class="vocab-chip">furthermore</div>
+                        <div class="vocab-chip">in addition</div>
+                        <div class="vocab-chip">moreover</div>
+                      </div>
+                    </div>
+                    <div class="linking-cat">
+                      <span class="cat-label">Contrasting</span>
+                      <div class="vocab-grid small">
+                        <div class="vocab-chip">however</div>
+                        <div class="vocab-chip">nevertheless</div>
+                        <div class="vocab-chip">on the contrary</div>
+                      </div>
+                    </div>
+                    <div class="linking-cat">
+                      <span class="cat-label">Cause/Effect</span>
+                      <div class="vocab-grid small">
+                        <div class="vocab-chip">consequently</div>
+                        <div class="vocab-chip">as a result</div>
+                        <div class="vocab-chip">thereby</div>
+                      </div>
+                    </div>
+                    <div class="linking-cat">
+                      <span class="cat-label">Concluding</span>
+                      <div class="vocab-grid small">
+                        <div class="vocab-chip">in conclusion</div>
+                        <div class="vocab-chip">to summarize</div>
+                        <div class="vocab-chip">all in all</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-block info-block-wide">
+                  <h4 class="info-block-title">Band 8.0 Sample Essay Paragraph — Opinion Essay</h4>
+                  <div class="sample-essay-box">
+                    <div class="sample-tag">✨ Band 8.0 Sample</div>
+                    <blockquote class="sample-text">
+                      "One compelling argument in favour of remote work is its profound impact on employee productivity. When individuals are afforded the flexibility to structure their own working environment, they are far more likely to enter a state of deep concentration, free from the incessant interruptions that typify open-plan offices. A study by Stanford University found that remote employees demonstrated a 13% increase in performance, corroborating the notion that autonomy fosters efficiency."
+                    </blockquote>
+                    <div class="examiner-note">
+                      <strong>Examiner Note:</strong> This paragraph demonstrates a clear topic sentence, sophisticated vocabulary ('afforded', 'incessant', 'corroborating'), an extended idea, and specific evidence. It would score Band 8.0–8.5 for Lexical Resource.
+                    </div>
+                  </div>
+                  <button class="btn btn-outline btn-sm mt-2" id="open-essay-modal" aria-haspopup="dialog">View Full Band 8.0 Essay →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== SPEAKING ===== -->
+        <article class="module-card" id="speaking" aria-labelledby="speaking-heading">
+          <div class="module-card-header speaking-header">
+            <div class="module-icon-large" aria-hidden="true">🗣️</div>
+            <div>
+              <div class="module-tag">11 – 14 Min Face-to-Face Interview</div>
+              <h3 class="module-title" id="speaking-heading">Speaking</h3>
+              <p class="module-desc">Assessed on Fluency, Vocabulary, Pronunciation, and Grammatical Range &amp; Accuracy.</p>
+            </div>
+            <div class="module-score-badge" aria-label="Target band score">Band 8.0+</div>
+          </div>
+          <div class="module-body">
+            <div class="module-grid">
+              <div class="info-block">
+                <h4 class="info-block-title">Part Breakdown</h4>
+                <div class="part-cards">
+                  <div class="part-card">
+                    <div class="part-num">1</div>
+                    <div>
+                      <strong>Introduction &amp; Interview</strong>
+                      <p>4–5 min. Familiar topics: home, family, work, hobbies. Short answers.</p>
+                    </div>
+                  </div>
+                  <div class="part-card">
+                    <div class="part-num">2</div>
+                    <div>
+                      <strong>Individual Long Turn (Cue Card)</strong>
+                      <p>1 min to prepare, 2 min to speak. Follow the cue card bullet points.</p>
+                    </div>
+                  </div>
+                  <div class="part-card">
+                    <div class="part-num">3</div>
+                    <div>
+                      <strong>Two-way Discussion</strong>
+                      <p>4–5 min. Abstract, analytical questions. Give opinions with reasons.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <h4 class="info-block-title">🕐 Cue Card 1-Minute Prep Timer</h4>
+                <div class="cue-timer-box" role="region" aria-label="Cue card preparation timer">
+                  <div class="cue-card-sample" aria-label="Sample cue card">
+                    <div class="cue-card-title">Talk about a time you learned something new</div>
+                    <ul class="cue-card-points">
+                      <li>What you learned</li>
+                      <li>When and where you learned it</li>
+                      <li>Who helped you learn it</li>
+                      <li>Explain why it was important to you</li>
+                    </ul>
+                  </div>
+                  <div class="timer-display" id="timer-display" aria-live="polite" aria-atomic="true">1:00</div>
+                  <div class="timer-controls" role="group" aria-label="Timer controls">
+                    <button class="btn btn-primary" id="timer-start" aria-label="Start timer">▶ Start</button>
+                    <button class="btn btn-outline" id="timer-pause" aria-label="Pause timer" disabled>⏸ Pause</button>
+                    <button class="btn btn-ghost" id="timer-reset" aria-label="Reset timer">↺ Reset</button>
+                  </div>
+                  <div class="timer-progress">
+                    <div class="timer-bar" id="timer-bar"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-block info-block-wide">
+                <h4 class="info-block-title">Band 8.0 Vocabulary &amp; Idiom Bank</h4>
+                <div class="vocab-search-wrapper">
+                  <input type="search" id="vocab-search" class="vocab-search" placeholder="Search vocabulary..." aria-label="Search vocabulary bank" />
+                </div>
+                <div class="vocab-bank" id="vocab-bank" role="list" aria-label="Vocabulary bank">
+                  <!-- filled by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== RESOURCES ===== -->
+    <section class="section resources-section" id="resources" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Official Materials</div>
+          <h2 class="section-title" id="resources-heading">Premium Free Resources</h2>
+          <p class="section-subtitle">Curated links to official and trusted IELTS preparation materials.</p>
+        </div>
+        <div class="resources-grid">
+          <a href="https://www.cambridgeenglish.org/exams-and-tests/ielts/" target="_blank" rel="noopener" class="resource-card" id="resource-cambridge">
+            <div class="resource-icon">📚</div>
+            <div class="resource-info">
+              <h3 class="resource-title">Cambridge IELTS</h3>
+              <p class="resource-desc">Official Cambridge practice tests and authentic exam materials.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://www.britishcouncil.org/exam/ielts" target="_blank" rel="noopener" class="resource-card" id="resource-british">
+            <div class="resource-icon">🇬🇧</div>
+            <div class="resource-info">
+              <h3 class="resource-title">British Council</h3>
+              <p class="resource-desc">Free sample tests, preparation tips, and registration guidance.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://www.idp.com/global/ielts/" target="_blank" rel="noopener" class="resource-card" id="resource-idp">
+            <div class="resource-icon">🌏</div>
+            <div class="resource-info">
+              <h3 class="resource-title">IDP IELTS</h3>
+              <p class="resource-desc">Computer-delivered IELTS, free practice tests, and study resources.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://ieltsliz.com" target="_blank" rel="noopener" class="resource-card" id="resource-liz">
+            <div class="resource-icon">🎯</div>
+            <div class="resource-info">
+              <h3 class="resource-title">IELTS Liz</h3>
+              <p class="resource-desc">Free lessons, tips, model answers and video tutorials from an expert.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://www.ielts.org/study-for-ielts" target="_blank" rel="noopener" class="resource-card" id="resource-official">
+            <div class="resource-icon">🏛️</div>
+            <div class="resource-info">
+              <h3 class="resource-title">IELTS.org Official</h3>
+              <p class="resource-desc">Official study guide, sample questions, and test format overview.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="#calculator" class="resource-card resource-card-accent" id="resource-start-practice">
+            <div class="resource-icon">🎯</div>
+            <div class="resource-info">
+              <h3 class="resource-title">Start Practice</h3>
+              <p class="resource-desc">Jump straight into the Band Score Calculator and find out where you stand right now.</p>
+            </div>
+            <div class="resource-arrow" aria-hidden="true">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="IELTS Prep Hub Home">
+          <span class="logo-icon" aria-hidden="true">🎓</span>
+          <span class="logo-text">IELTS <span class="logo-accent">Prep Hub</span></span>
+        </a>
+        <p class="footer-tagline">Free, structured IELTS preparation for every serious learner.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Modules</h4>
+          <ul role="list">
+            <li><a href="#listening">Listening</a></li>
+            <li><a href="#reading">Reading</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#speaking">Speaking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Tools</h4>
+          <ul role="list">
+            <li><a href="#calculator">Band Calculator</a></li>
+            <li><a href="#speaking">Cue Card Timer</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul role="list">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#calculator">Start Practice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 IELTS Prep Hub. Built with ❤️ for IELTS aspirants worldwide. Not affiliated with the British Council, IDP, or Cambridge Assessment English.</p>
+    </div>
+  </footer>
+
+  <!-- ===== ESSAY MODAL ===== -->
+  <div class="modal-overlay" id="essay-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="close-essay-modal" aria-label="Close essay modal">✕</button>
+      <div class="modal-header">
+        <div class="sample-tag large">✨ Band 8.0 Full Essay</div>
+        <h2 class="modal-title" id="modal-title">Opinion Essay: Remote Work</h2>
+        <p class="modal-subtitle">Topic: Some people think that working from home is beneficial. Others believe it creates more problems than advantages. Discuss both views and give your opinion.</p>
+      </div>
+      <div class="modal-body">
+        <div class="essay-section">
+          <div class="essay-part-label">Introduction</div>
+          <p>In recent decades, advances in digital technology have fundamentally transformed the nature of employment, enabling millions of workers to perform their professional duties from the comfort of their homes. While proponents argue that remote work enhances productivity and work-life balance, critics contend that it undermines collaboration and erodes workplace culture. I firmly believe that, on balance, the advantages of remote working considerably outweigh its drawbacks.</p>
+          <div class="examiner-note mt-1"><strong>Examiner:</strong> Clear thesis, balanced intro, sophisticated vocabulary ('contend', 'erodes'). Band 8.0 introduction.</div>
+        </div>
+        <div class="essay-section">
+          <div class="essay-part-label">Body Paragraph 1</div>
+          <p>One compelling argument in favour of remote work is its profound impact on employee productivity. When individuals are afforded the flexibility to structure their own working environment, they are far more likely to enter a state of deep concentration, free from the incessant interruptions that typify open-plan offices. A study by Stanford University found that remote employees demonstrated a 13% increase in performance, corroborating the notion that autonomy fosters efficiency. Furthermore, the elimination of lengthy commutes allows workers to reclaim considerable time, which can be redirected towards professional development or personal well-being.</p>
+          <div class="examiner-note mt-1"><strong>Examiner:</strong> Extended idea, specific evidence, cohesive devices ('Furthermore'), advanced collocations. Band 8.0–8.5 vocabulary.</div>
+        </div>
+        <div class="essay-section">
+          <div class="essay-part-label">Body Paragraph 2</div>
+          <p>Nevertheless, the concerns surrounding remote work are not without merit. Detractors argue that the absence of face-to-face interaction stifles spontaneous collaboration, which is often the catalyst for innovation. Junior employees, in particular, may suffer from a lack of mentorship opportunities that naturally arise in physical office settings. However, these challenges are increasingly being mitigated by sophisticated virtual collaboration tools such as Slack and Microsoft Teams, which facilitate real-time communication and project management across distributed teams.</p>
+          <div class="examiner-note mt-1"><strong>Examiner:</strong> Counter-argument acknowledged and refuted — demonstrates sophisticated argumentation. Conditional grammar used accurately.</div>
+        </div>
+        <div class="essay-section">
+          <div class="essay-part-label">Conclusion</div>
+          <p>In conclusion, while remote working is not without its challenges, particularly regarding collaboration and mentorship, the substantial benefits it offers in terms of productivity, employee satisfaction, and environmental impact make it a largely positive development. Governments and corporations alike should invest in the infrastructure and policies necessary to support this evolving work paradigm.</p>
+          <div class="examiner-note mt-1"><strong>Examiner:</strong> Restates thesis, summarises main points, ends with forward-looking statement. Clean, concise conclusion. Band 8.0 overall.</div>
+        </div>
+        <div class="essay-score-summary" aria-label="Essay score summary">
+          <div class="score-item"><div class="score-label">Task Achievement</div><div class="score-val">8.0</div></div>
+          <div class="score-item"><div class="score-label">Coherence &amp; Cohesion</div><div class="score-val">8.0</div></div>
+          <div class="score-item"><div class="score-label">Lexical Resource</div><div class="score-val">8.5</div></div>
+          <div class="score-item"><div class="score-label">Grammatical Range</div><div class="score-val">8.0</div></div>
+          <div class="score-item overall"><div class="score-label">Overall</div><div class="score-val">8.0</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
